@@ -64,7 +64,7 @@ int main() {
             X_act_r[j] = X_act;
             j += 1;
         }
-    } while (t <= t_end);
+    } while (X_lag >= alpha * X_lag0 && t <= t_end);
     sprintf(fname, "beer1.csv");
     file = fopen(fname, "w");
     for (int i = 0; i < j; ++i) {
