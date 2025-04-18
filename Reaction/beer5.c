@@ -32,8 +32,9 @@ double fC_ace(double X_act, double X_lag, double C_sug, double C_eth, double C_a
 double fC_dia(double X_act, double X_lag, double C_sug, double C_eth, double C_ace, double C_dia);
 
 int main() {
-    for (double d = 13.0; d <= 18.0; d += 0.1) {
-        T_options[(int)((d - 13.0) * 10)] = d + 273.15;
+    for (int i = 0; i < 51; i++) {
+        double d = 13.0 + 0.1 * i;
+        T_options[i] = d + 273.15;
     }
 
     sprintf(fname, "beer_manufacturing_results2.csv");
