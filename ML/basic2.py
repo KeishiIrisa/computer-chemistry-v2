@@ -5,7 +5,7 @@ import pandas as pd
 if __name__ == "__main__":
     input_filename = sys.argv[1]
 
-    data = pd.read_csv(input_filename, sep='¥t')
+    data = pd.read_csv(input_filename, sep='\t')
 
     base_name, ext = os.path.splitext(input_filename)
     ii = 0

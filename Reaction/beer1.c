@@ -19,8 +19,6 @@ double fX_act(double X_act, double X_lag);
 int main() {
     T = 10.0 + 273.15;
     k_lag = exp(30.7 - 9.5*pow(10, 3)/T);
-    // k_m = exp(1.30 * pow(10, 2) - 3.83*pow(10, 4)/T);
-    // k_x0 = exp(1.08*pow(10, 2) - 3.19*pow(10, 4)/T);
     t = 0;
     dt = 0.001;
     t_end = 1000.0;
